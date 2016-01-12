@@ -18,7 +18,7 @@ args = parser.parse_args()
 
 start = time.mktime(time.strptime(args.start, "%Y-%m-%d")) if args.start \
     is not None else 0
-end = time.mktime(time.strptime(args.start, "%Y-%m-%d")) if args.end is \
+end = time.mktime(time.strptime(args.end, "%Y-%m-%d")) if args.end is \
     not None else 2**32
 
 transaction_url_format = "https://blockchain.info/address/%s?format=json"
